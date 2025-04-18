@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding-left: 80px;
+    padding-top: 20px;
+    color: white;
+}
+
+header a {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.home {
+    color: #07B700;
+}
+
+.home:hover {
+    color: #07B700;
+    text-shadow: 0 0 5px #07B700, 0 0 10px #07B700, 0 0 20px #07B700, 0 0 30px #07B700;
+    transition: 0.3s;
+    font-size: 25px;
+    transform: scale(1.1);
+}
+
+.fale {
+    color: #FED907;
+}
+
+.fale:hover {
+    color: #FED907;
+    text-shadow: 0 0 5px #FED907, 0 0 10px #FED907, 0 0 20px #FED907, 0 0 30px #FED907;
+    transition: 0.3s;
+    font-size: 25px;
+    transform: scale(1.1);
+}
+
+.nossos {
+    color: #0546EC;
+}
+
+.nossos:hover {
+    color: #0546EC;
+    text-shadow: 0 0 5px #0546EC, 0 0 10px #0546EC, 0 0 20px #0546EC, 0 0 30px #0546EC;
+    transition: 0.3s;
+    font-size: 25px;
+    transform: scale(1.1);
+}
+
+.container-master {
+    display: flex;
+    padding: 100px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-sobre {
+    width: 45%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container-sobre h4 {
+    margin-bottom: 3px;
+}
+
+.container-video {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+}
+
+video {
+min-height: 100%;
+min-width: 100%;
+position: fixed;
+top: 0;
+left: 0;
+}
+
+.mascara {
+    position: fixed;
+    width: 110%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(41deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+.icon {
+    height: 100px;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.logo {
+    height: 200px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.irmaos {
+    height: 450px;
+}
+
+.irmaos:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.whatsapp {
+    height: 60px;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+}
+
+.whatsapp:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+button {
+    color: white;
+    background-color: #E60012;
+    border-radius: 4px;
+    width: 175px;
+    height: 45px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 0px;
+    border: 2px solid #9FADD2;
+    align-self: center;
+
+}
+
+button:hover {
+    box-shadow: 0 0 5px #0546EC, 0 0 10px #0546EC, 0 0 20px #0546EC, 0 0 30px #0546EC;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.foms-fale-conosco {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 0 5px #E60012, 0 0 10px #E60012, 0 0 20px #E60012, 0 0 30px #E60012;
+    position: fixed;
+    padding: 15px;
+    border-radius: 5px;
+    gap: 10px;
+    top: 20%;
+    left: -250px;
+}
+
+input {
+    height: 33px;
+    padding-left: 5px;
+    outline-color: #E60012;
+}
+
+textarea {
+    padding-left: 5px;
+    outline-color: #E60012;
+    height: 85px;
+}
+
+.mascara-formulario {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+@media(max-width: 950px) {
+    .icon {
+        display: none;
+    }
+
+    h4 {
+        display: none;
+    }
+    
+    p {
+        display: none;
+    }
+
+    .logo {
+        margin-top: -50px;
+    }
+
+    .container-master {
+        padding: 35px;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    header {
+        display: flex;
+        padding: 35px;
+        gap: 25px;
+        align-items: center;
+        text-align: center;
+    }
+
+        header a {
+        font-size: 18px;
+    }
+
+    .container-header {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+.irmaos {
+    margin-top: 20px;
+    height: auto;
+    width: 90%;
+}
+
+}
